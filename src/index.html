@@ -10,30 +10,39 @@
   <body>
 
     <header class="header-container">
+
+      <!-- Форма отримання запиту на пошук з кнопкою -->
       <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button type="submit"><b>Search</b></button>
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images ..." />
+        <button type="submit"><b>🔍</b></button>
       </form>
+      
     </header>
 
     <main>
       <div class="gallery-container">
+
+        <!-- Чистий вміст галереї до виконаного пошуку -->
         <div class="gallery">
-          <!-- Картки зображень -->
         </div>
+
+        <!-- Розмітка кнопки завантаження додаткової частиник колекції -->
         <button type="button" class="load-more is-hidden">
           <b>Load more</b>
         </button>
-        <div class="end-of-serch is-hidden">
+
+        <!-- Розмітка оповіщення щодо кінця доступної колекції -->
+        <div class="load-end is-hidden">
           <b>"We're sorry, but you've reached the end of search results."</b>
         </div>
+
       </div>
-      
-      <button type="button" class="btn-to-top" title="Return to top">
-        <b>Top</b>
+
+      <!-- Кнопка повернення до початку сторінки -->
+      <button type="button" class="btn-up" title="Up">
+        <b>Up</b>
       </button>
-      
-      <div class="scroll-guard"></div>
+
     </main>
 
     <script type="module" src="./index.js"></script>
